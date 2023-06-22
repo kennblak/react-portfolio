@@ -5,14 +5,14 @@ const Header = () => {
     /*=================  Toggle Menu ===============*/
     const [Toggle, showMenu ] = useState(false);
   return (
-    <header className="header">
+    <header className="header" >
       <nav className="nav container">
         <a href="index.html" className="nav__logo">
           Kenn
         </a>
 
         <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
-            <ul className="nav__list grid">
+            <ul className="nav__list grid" style={{display: "flex"}}>
                 <li className="nav__list__item">
                     <a href="#home" className="nav__link active-link">
                         <i className="uil uil-estate nav__icon"></i> Home
