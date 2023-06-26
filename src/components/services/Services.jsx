@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import "./services.css";
-
+ 
 const Services = () => {
-  const [ToggleState, setToggleState] = useState(0);
+  const [toggleState, setToggleState] = useState(0);
 
   const toggleTab = (index) => {
     setToggleState(index);
@@ -25,12 +25,12 @@ const Services = () => {
             View More
           <i className="uil uil-arrow-right services__button-icon"></i></span>
 
-          <div className={ToggleState === 1 ? "services__modal active-modal" : "services__modal"}>
+          <div className={toggleState === 1 ? "services__modal active-modal" : "services__modal"}>
             <div className="services__modal-content">
               <i onClick={() => toggleTab(0)} className="uil uil-times services__modal-close"></i>
             
           <h3 className="services__modal-title">Product Designer</h3>
-          <p className="services__modal-description">Service with more than 3 year of expeerience. Providing quality work to clients and companies.</p>
+          <p className="services__modal-description">Service with more than 2 year of experience. Providing quality work to clients and companies.</p>
 
           <ul className="services__modal-services grid">
             <li className="services__modal-service">
@@ -82,12 +82,12 @@ const Services = () => {
             View More
           <i className="uil uil-arrow-right services__button-icon"></i></span>
 
-          <div className={ToggleState === 2 ? "services__modal active-modal" : "services__modal"}>
+          <div className={toggleState === 2 ? "services__modal active-modal" : "services__modal"}>
             <div className="services__modal-content">
               <i onClick={() => toggleTab(0)} className="uil uil-times services__modal-close"></i>
 
           <h3 className="services__modal-title">Ui/Ux Designer</h3>
-          <p className="services__modal-description">Service with more than 3 year of expeerience. Providing quality work to clients and companies.</p>
+          <p className="services__modal-description">Service with more than 2 year of experience. Providing quality work to clients and companies.</p>
 
           <ul className="services__modal-services grid">
             <li className="services__modal-service">
@@ -138,12 +138,12 @@ const Services = () => {
           <span onClick={() => toggleTab(3)} className="services__button">View More
           <i className="uil uil-arrow-right services__button-icon"></i></span>
 
-          <div className={ToggleState === 3 ? "services__modal active-modal" : "services__modal"}>
+          <div className={toggleState === 3 ? "services__modal active-modal" : "services__modal"}>
             <div className="services__modal-content">
               <i onClick={() => toggleTab(0)} className="uil uil-times services__modal-close"></i>
 
           <h3 className="services__modal-title">Visual Designer</h3>
-          <p className="services__modal-description">Service with more than 3 year of expeerience. Providing quality work to clients and companies.</p>
+          <p className="services__modal-description">Service with more than 2 year of experience. Providing quality work to clients and companies.</p>
 
           <ul className="services__modal-services grid">
             <li className="services__modal-service">
